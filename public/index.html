@@ -1,0 +1,12 @@
+<!doctype html>
+<html ng-app="todoApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="Myapp as app">
+    IP (ISP) : {{app.userIp}} <br> <hr>
+    Os (operating System) :{{app.userOs['user-agent']}} <br> <hr>
+    Location : {{app.userGet[0].headers['Accept-Language']}} <br> <hr>
+  </body>
+</html>
